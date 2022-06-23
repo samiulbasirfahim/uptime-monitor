@@ -1,0 +1,13 @@
+{
+	"name": "uptime-monitor",
+	"version": "1.0.0",
+	"description": "a website that can monitor any site is down or up",
+	"main": "src/index.js",
+	"scripts": {
+		"start": "node src/index.js",
+		"start-dev": "nodemon src/index.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "samiul basir fahim(inspired lws tutorial)",
+	"license": "MIT"
+}
