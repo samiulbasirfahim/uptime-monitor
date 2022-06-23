@@ -1,6 +1,6 @@
 const mainRoute = (request, callback) => {
 	callback(200, {
-		message: "Hello World",
+		message: "Welcome to the main route",
 	})
 }
 

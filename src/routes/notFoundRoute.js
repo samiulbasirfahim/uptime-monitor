@@ -1,6 +1,6 @@
 const notFound = (request, callback) => {
 	callback(404, {
-		message: "Not Found",
+		message: "The URL you requested was not found on this server.",
 	})
 }
 
