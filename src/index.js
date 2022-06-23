@@ -7,6 +7,7 @@
 
 // Importing the necessary modules
 const http = require("http")
+const handleServer = require("./modules/handleServer")
 
 // Initializing the app
 const app = {}
@@ -25,9 +26,7 @@ app.server = () => {
 }
 
 // handle server
-app.handleServer = (req, res) => {
-	res.end("Hello World")
-}
+app.handleServer = handleServer
 
 // run Server
 app.server()
