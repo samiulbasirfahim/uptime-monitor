@@ -19,6 +19,7 @@ const handleServer = (req, res) => {
 	let body = ""
 	const query = parsedUrl.query
 	const decoder = new StringDecoder("utf-8")
+
 	req.on("data", (chunkOfBuffer) => {
 		body += decoder.write(chunkOfBuffer)
 	})
@@ -33,6 +34,7 @@ const handleServer = (req, res) => {
 				query,
 				body,
 			}
+
 			const routeFunction = routes[path] ? routes[path] : notFound
 			routeFunction(request, (statusCode, payload) => {
 				res.writeHead(typeof statusCode === "number" ? statusCode : 500)

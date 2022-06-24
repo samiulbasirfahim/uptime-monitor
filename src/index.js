@@ -8,6 +8,7 @@
 // Importing the necessary modules
 const http = require("http")
 const handleServer = require("./modules/handleServer")
+const passedEnvironment = require("./modules/env")
 
 // Initializing the app
 const app = {}
