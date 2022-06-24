@@ -8,7 +8,7 @@
 // Importing the necessary modules
 const http = require("http")
 const handleServer = require("./modules/handleServer")
-const passedEnvironment = require("./modules/env")
+const env = require("./modules/env")
 
 // Initializing the app
 const app = {}
@@ -21,8 +21,8 @@ app.config = {
 // Creating server
 app.server = () => {
 	const server = http.createServer(app.handleServer)
-	server.listen(app.config.port, () => {
-		console.log(`Server is running on port ${app.config.port}`)
+	server.listen(env.port, () => {
+		console.log(`Server is running on port ${env.port}`)
 	})
 }
 
